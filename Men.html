@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attractive Shopping Cart</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/FlipSearch.css">-->
+    <link rel="stylesheet" href="css/FlipSearch.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/menmenu.css"> 
+   
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+   
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+
+</head>
+
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">NZ Sale </a>
+            </div>
+            <form class="form-wrapper cf">
+                <input type="text" placeholder="Search here..." required>
+                <button type="Submit">Search</button>
+            </form>
+            <!--0<div>
+                <a class="navbar-brand1" href="#">My Account </a>
+            </div>-->
+        </div>
+    </nav>
+    <nav class="animenu">
+        <button class="animenu__toggle">
+            <span class="animenu__toggle__bar"></span>
+            <span class="animenu__toggle__bar"></span>
+            <span class="animenu__toggle__bar"></span>
+        </button>
+        <ul class="animenu__nav">
+            <li>
+                <a href="Shopping.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Men</a>
+                <ul class="animenu__nav__child">
+                    <li><a href="Men.html">Clothes</a></li>
+                    <li><a href="">Coolers</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Personal Care</a></li>
+                    <li><a href="">Watches</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Women</a>
+                <ul class="animenu__nav__child">
+                    <li><a href="Womentest.html">Clothes</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Bags</a></li>
+                    <li><a href="">Ornaments</a></li>
+                    <li><a href="">Cosmetics</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Kids</a>
+                <ul class="animenu__nav__child">
+                    <li><a href="">Clothes</a></li>
+                    <li><a href="">Toys</a></li>
+                    <li><a href="">Beauty Kits</a></li>
+                    <li><a href="Kidsnew.html">School Supplies</a></li>
+                    <li><a href="">Crew and BQT</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Apparel</a>
+                <ul class="animenu__nav__child">
+                    <li><a href="Apparel.html">Polo </a></li>
+                    <li><a href="">Nike</a></li>
+                    <li><a href="">Puma</a></li>
+                    <li><a href="">Business shoes</a></li>
+                    <li><a href="">Crew and BQT</a></li>
+                </ul>
+            </li>
+            <li><a href="Offersnew.html">Offers</a></li>
+            <li>
+                <a href="AboutUs.html">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <body class="container" ng-controller="myController">
+    <div class="header">
+        <h1>
+            Product Cart
+        </h1>
+        <p>
+            "A fresh approach to shopping"
+        </p>
+        <p>
+            Feel-good shopping.
+        </p>
+    </div>
+    <h1><b>Men's Clothes</b></h1>
+    <br>
+ 
+    <div class="row">
+            <table class="table col-md-9">
+              <tr>
+                <th>Product Name</th>
+               <th> Image</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+              <tr ng-repeat="item in inventory | orderBy:'category'">
+                <td>{{ item.category }}</td>
+                <td><img src={{item.image}} width=90></img></td>
+                <td ng-class="{ 'on-sale' : item.onSale }">{{ item.price | currency }}</td>
+                <td><input type="number" min="0" class="qty" ng-model="item.qty"></td>
+                <td>{{ item.qty * item.price | currency }}</td>
+                <td><button class="btn-primary" ng-click="addItem(item);">Add</button></td>
+              </tr>
+            </table>
+          </div>
+          <div class="row">
+            <h2>Your Cart:</h2>
+            <ul>
+              <li ng-repeat="item in cart | orderBy:'category'">{{ item.qty + ' x ' + item.category }}</li>
+            </ul>
+      
+            <button class="checkout"> <a href="ConfirmationworkingBkup.html">Checkout</a></button>
+          </div>
+    <div class="newfooter">
+        <p> a
+        </p>
+    </div>
+    <script  src="js/ngindex.js"></script>
+    <script src="js/shoppingnew.js"></script>
+    <script src="js/animmenu.js"></script>
+</body>
+
+</html>

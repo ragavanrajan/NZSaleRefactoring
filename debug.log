@@ -1,0 +1,17 @@
+[0721/091227.403:ERROR:settings.cc(258)] Settings magic is not 1129342067
+[0723/143733.690:INFO:rc_l10n_handler.cc(131)] Language not in the available languages list: en-US
+[0723/143733.691:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
+[0723/143733.691:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
+[0723/143733.691:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en
+[0723/145848.832:INFO:rc_l10n_handler.cc(131)] Language not in the available languages list: en-US
+[0723/145848.833:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
+[0723/145848.833:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
+[0723/145848.833:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en
+[0723/145858.485:INFO:rc_l10n_handler.cc(131)] Language not in the available languages list: en-US
+[0723/145858.487:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
+[0723/145858.487:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
+[0723/145858.487:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en
+[0811/114657.945:ERROR:persistent_memory_allocator.cc(809)] Corruption detected in shared-memory segment.
+[0905/195008.107:ERROR:persistent_memory_allocator.cc(809)] Corruption detected in shared-memory segment.
+[0907/174959.748:ERROR:persistent_memory_allocator.cc(809)] Corruption detected in shared-memory segment.
+[0920/150904.198:ERROR:persistent_memory_allocator.cc(815)] Corruption detected in shared-memory segment.

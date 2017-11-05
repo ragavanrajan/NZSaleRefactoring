@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <!--
+<link rel="stylesheet" href="css/FlipSearch.css">
+    -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/newpayment.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+    <nav class="animenu">
+        <button class="animenu__toggle">
+            <span class="animenu__toggle__bar"></span>
+            <span class="animenu__toggle__bar"></span>
+            <span class="animenu__toggle__bar"></span>
+        </button>
+        <ul class="animenu__nav">
+            <li>
+                <a href="Shopping.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Men</a>
+                <ul class="animenu__nav__child">
+                    <li><a href="Men.html">Clothes</a></li>
+                    <li><a href="">Coolers</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Personal Care</a></li>
+                    <li><a href="">Watches</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Women</a>
+                <ul class="animenu__nav__child">
+                    <li><a href="Womentest.html">Clothes</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Bags</a></li>
+                    <li><a href="">Ornaments</a></li>
+                    <li><a href="">Cosmetics</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Kids</a>
+                <ul class="animenu__nav__child">
+                    <li><a href="">Clothes</a></li>
+                    <li><a href="">Toys</a></li>
+                    <li><a href="">Beauty Kits</a></li>
+                    <li><a href="Kids.html">School Supplies</a></li>
+                    <li><a href="">Crew and BQT</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Apparel</a>
+                <ul class="animenu__nav__child">
+                    <li><a href="Apparel.html">Polo </a></li>
+                    <li><a href="">Nike</a></li>
+                    <li><a href="">Puma</a></li>
+                    <li><a href="">Business shoes</a></li>
+                    <li><a href="">Crew and BQT</a></li>
+                </ul>
+            </li>
+            <li><a href="Offers.html">Offers</a></li>
+            <li>
+                <a href="AboutUs.html">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <form action="" id="ACHform">
+        <div id="showswhereheaderis"></div>
+        <div id="container">
+            <div class="contents">
+                <div class="formheader">
+                    <div class="paymentsteps stepone"></div>
+
+                    <h2>Pay Using a checking account</h2>
+                </div>
+                <div class="inset">
+                    <div class="block paddingbottom20">
+                        <h3>Select the payment amount</h3>
+                        <div class="radiogrid">
+                            <div class="radiorow">
+                                <div class="radiocell">
+                                    <input type="radio" name="option" value="NextAmountDue">
+                                    <label for="CurrentAmountDue">Current Amount Due</label>
+                                </div>
+                                <div class="radiocell paddingtop2"><span class="light">$219.00</span></div>
+                            </div>
+                            <div class="radiorow">
+                                <div class="radiocell">
+                                    <input type="radio" name="option" value="RemainingBalance" />
+                                    <label for="RemainingBalance">Remaining Balance</label>
+                                </div>
+                                <div class="radiocell paddingtop2"><span class="light" id="ctl00_ContentPlaceHolderBody_lblRemainingAmount">$519.00</span></div>
+                            </div>
+                            <div class="radiorow">
+                                <div class="radiocell">
+                                    <input type="radio" name="otheramount" id="otheramount">
+                                    <label for="otheramount">Other Amount</label>
+                                </div>
+                            </div>
+                            <div class="textgrid">
+                                <div class="textrow">
+                                    <br>
+                                    <br>
+
+                                    <label for="name" class="lefttextlbl" for="RemainingBalance">Name of Payee</label>
+                                    <div class="lefttextinput">
+                                        <input type="text" class="textbox medium" name="name"> <span class="info">Enter the name as it appears on the check<span>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    
+                    <div class="textrow">
+                        <label class="lefttextlbl" for="RemainingBalance">Email address</label>
+                        <div class="lefttextinput">
+                            <input type="text" class="textbox medium" name="email" > <span class="info">We'll send your payment confirmation receipt here</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secureblock">
+                        <div class="inset">
+                            <div class="sbdata">
+                                <h3>Enter secure payment information</h3>
+                                <div class="textgrid">
+                                    <div class="textrow">
+                                        <label class="lefttextlbl" for="RemainingBalance">Account Number</label>
+                                        <div class="lefttextinput">
+                                            <input type="text" class="textbox medium accountnumber" name="accountnumber" for="name"> <a href=""><span class="info">Where is my account number?</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="textrow">
+                                        <label class="lefttextlbl" for="RemainingBalance">Confirm Account Number</label>
+                                        <div class="lefttextinput">
+                                            <input type="text" class="textbox medium" name="accountnumberconfirm">
+                                        </div>
+                                    </div>
+                                    <div class="textrow">
+                                        <label class="lefttextlbl" for="RemainingBalance">Routing Number</label>
+                                        <div class="lefttextinput">
+                                            <input type="text" class="textbox medium" name="routingnumber"><a href=""><span class="info"> Where is my routing number?</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="secureright">
+                                <div class="SecureImage"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <!-- CREDIT CARD FORM STARTS HERE -->
+                        <div class="panel panel-default credit-card-box">
+                            <div class="panel-heading display-table">
+                                <div class="row display-tr">
+                                    <h3 class="panel-title display-td">Payment Details</h3>
+                                    <div class="display-td">
+                                        <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="radiocell">
+                                    <input type="radio" name="option" value="cod" />
+                                    <label for="RemainingBalance">Cash on Delivery</label>
+                                </div>
+                                <form role="form" id="payment-form">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="cardNumber">CARD NUMBER</label>
+                                                <div class="input-group">
+                                                    <input type="tel" class="form-control" name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number" required autofocus />
+                                                    <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-7 col-md-7">
+                                            <div class="form-group">
+                                                <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                                <input type="tel" class="form-control" name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-5 col-md-5 pull-right">
+                                            <div class="form-group">
+                                                <label for="cardCVC">CV CODE</label>
+                                                <input type="tel" class="form-control" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="couponCode">COUPON CODE</label>
+                                                <input type="text" class="form-control" name="couponCode" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <button class="btn btn-success btn-lg btn-block" type="submit">Make Payment</button>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="display:none;">
+                                        <div class="col-xs-12">
+                                            <p class="payment-errors"></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inset">
+                        <div class="block">
+                            <div class="leftside">
+                                <input type="submit" name="ctl00$ContentPlaceHolderBody$btnSubmit" value="Return to shopping" class="btnSecondary">
+                            </div>
+                            <div class="rightside">
+                                <input type="checkbox" name="paymentauthorization" value="Bike"> I agree to the terms and conditions of the <a href="" class="authorize">Payment Authorization Agreement</a>
+                                <br>
+                                <input type="submit" name="ctl00$ContentPlaceHolderBody$btnSubmit" value="Pay using your checking account" class="btnPrimary">
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+    </form>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.2.3/jquery.payment.min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/paymentindex.js"></script>
+</body>
+
+</html>
